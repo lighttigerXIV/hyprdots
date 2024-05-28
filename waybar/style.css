@@ -13,7 +13,8 @@
 #tray,
 #cpu,
 #language,
-#network {
+#network,
+#pulseaudio {
   background-color: #1b0b00;
   padding: 4px 6px 4px 6px;
   border-radius: 4px;
@@ -36,6 +37,9 @@
 }
 #network {
   color: #FFE072;
+}
+#pulseaudio {
+  color: #FFAAF5;
 }
 
 .modules-right,

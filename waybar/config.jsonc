@@ -5,24 +5,24 @@
   "spacing": 4,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["network","cpu", "battery", "hyprland/language", "tray"],
+  "modules-right": ["pulseaudio","network","cpu", "battery", "hyprland/language", "tray"],
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
       "active": "   ",
       "default": "   "
-    },
-    "persistent-workspaces": {
-      "1": "eDP-1",
-      "2": "HDMI-A-1",
-      "3": "eDP-1",
-      "4": "HDMI-A-1"
     }
   },
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": true,
     "tooltip-format": "{:%d/%m/%Y}"
+  },
+  "pulseaudio": {
+    "format": "    {volume}",
+    "format-muted": "    {volume}",
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
   },
   "network":{
     "interval": 30,
