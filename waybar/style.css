@@ -1,0 +1,47 @@
+* {
+  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  color: #ffeee2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#waybar {
+  background: transparent;
+}
+
+#battery,
+#tray,
+#cpu,
+#language,
+#network {
+  background-color: #1b0b00;
+  padding: 4px 6px 4px 6px;
+  border-radius: 4px;
+}
+
+#battery {
+  color: #b1e380;
+}
+#battery.ok {
+  color: #ffe072;
+}
+#battery.warning {
+  color: #ffb26c;
+}
+#battery.critical {
+  color: #ff8c7c;
+}
+#cpu {
+  color: #a5ceff;
+}
+#network {
+  color: #FFE072;
+}
+
+.modules-right,
+.modules-center,
+.modules-left {
+  background-color: #0e0600;
+  border-radius: 6px;
+  padding: 2px 4px 2px 4px;
+}

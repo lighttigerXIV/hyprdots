@@ -1,0 +1,54 @@
+{
+  "margin-top": 4,
+  "margin-left": 14,
+  "margin-right": 14,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network","cpu", "battery", "hyprland/language", "tray"],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "   ",
+      "default": "   "
+    },
+    "persistent-workspaces": {
+      "1": "eDP-1",
+      "2": "HDMI-A-1",
+      "3": "eDP-1",
+      "4": "HDMI-A-1"
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:%d/%m/%Y}"
+  },
+  "network":{
+    "interval": 30,
+    "format-ethernet": " 󰈀 ",
+    "format-wifi": "{essid} 󰤨 ",
+    "format-disconnected": "NOOOO! 󰤯 "
+  },
+  "cpu": {
+    "format": "   {usage}%"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["  ", "  ", "  ", "  "],
+    "states": {
+      "critical": 20,
+      "warning": 40,
+      "ok": 60
+    },
+    "refresh": 60
+  },
+  "hyprland/language": {
+    "format-en": "🇺🇸",
+    "format-pt": "🇵🇹"
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  }
+}
