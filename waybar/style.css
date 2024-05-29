@@ -9,43 +9,52 @@
   background: transparent;
 }
 
+#clock,
 #battery,
 #tray,
 #cpu,
 #language,
 #network,
 #pulseaudio {
-  background-color: #1b0b00;
-  padding: 4px 6px 4px 6px;
-  border-radius: 4px;
+  background-color: #0e0600;
+  padding: 8px 16px 8px 16px;
+  border-radius: 48px;
 }
 
 #battery {
   color: #b1e380;
+  border: 2px solid #b1e380;
 }
 #battery.ok {
   color: #ffe072;
+  border: 2px solid #ffe072;
 }
 #battery.warning {
   color: #ffb26c;
+  border: 2px solid #ffb26c;
 }
-#battery.critical {
+#battery.critical,
+#language {
   color: #ff8c7c;
+  border: 2px solid #ff8c7c;
 }
 #cpu {
   color: #a5ceff;
+  border: 2px solid #a5ceff;
 }
 #network {
-  color: #FFE072;
+  color: #ffe072;
+  border: 2px solid #ffe072;
 }
 #pulseaudio {
-  color: #FFAAF5;
+  color: #ffaaf5;
+  border: 2px solid #ffaaf5;
 }
 
-.modules-right,
-.modules-center,
-.modules-left {
-  background-color: #0e0600;
-  border-radius: 6px;
-  padding: 2px 4px 2px 4px;
+#tray {
+  border: 2px solid #FFB26C;
+}
+
+#clock {
+  border: 2px solid #ffeee2;
 }

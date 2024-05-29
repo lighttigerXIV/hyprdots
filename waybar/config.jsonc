@@ -3,16 +3,9 @@
   "margin-left": 14,
   "margin-right": 14,
   "spacing": 4,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["pulseaudio","network","cpu", "battery", "hyprland/language", "tray"],
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": "   ",
-      "default": "   "
-    }
-  },
+  "modules-left": ["clock"],
+  "modules-center": [],
+  "modules-right": ["pulseaudio", "network", "cpu", "battery", "hyprland/language", "tray"],
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": true,
@@ -20,15 +13,15 @@
   },
   "pulseaudio": {
     "format": "    {volume}",
-    "format-muted": "    {volume}",
+    "format-muted": " ",
     "scroll-step": 5,
     "on-click": "pavucontrol"
   },
-  "network":{
+  "network": {
     "interval": 30,
     "format-ethernet": " 󰈀 ",
-    "format-wifi": "{essid} 󰤨 ",
-    "format-disconnected": "NOOOO! 󰤯 "
+    "format-wifi": "󰤨   {essid}",
+    "format-disconnected": "󰤯   NOOOO!"
   },
   "cpu": {
     "format": "   {usage}%"
