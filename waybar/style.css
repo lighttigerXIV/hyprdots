@@ -2,7 +2,7 @@
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   color: #ffeee2;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #waybar {
@@ -10,12 +10,15 @@
 }
 
 #clock,
+#custom-waymedia,
+#custom-waymedia-buttons,
 #battery,
 #tray,
 #cpu,
 #language,
 #network,
-#pulseaudio {
+#pulseaudio,
+#bluetooth {
   background-color: #0e0600;
   padding: 8px 16px 8px 16px;
   border-radius: 48px;
@@ -29,12 +32,13 @@
   color: #ffe072;
   border: 2px solid #ffe072;
 }
-#battery.warning {
+#battery.warning, #bluetooth {
   color: #ffb26c;
   border: 2px solid #ffb26c;
 }
 #battery.critical,
-#language {
+#language,
+#custom-waymedia-buttons {
   color: #ff8c7c;
   border: 2px solid #ff8c7c;
 }
@@ -49,6 +53,14 @@
 #pulseaudio {
   color: #ffaaf5;
   border: 2px solid #ffaaf5;
+}
+
+#custom-waymedia{
+  border: 2px solid #a5ceff;
+}
+
+#custom-waymedia-buttons{
+  border: 2px solid #ff8c7c;
 }
 
 #tray {
