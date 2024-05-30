@@ -15,7 +15,7 @@ sudo pacman -S hyprland hyprpaper xdg-desktop-portal-hyprland gnome-keyring wayb
 ## Move Configs
 ```
 mkdir -p ~/.config/hypr
-https://github.com/lighttigerXIV/hyprdots.git ~/.config/hypr/.
+git clone https://github.com/lighttigerXIV/hyprdots.git ~/.config/hypr/.
 cd ~/.config/hypr
 mv waybar ~/.config/
 mv mako ~/.config/
