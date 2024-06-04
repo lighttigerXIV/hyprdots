@@ -1,12 +1,14 @@
 * {
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   color: #ffeee2;
-  font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #waybar {
-  background: transparent;
+  background: #0e0600;
+  opacity: 0.9;
+  border-radius: 8px;
+  border: 2px solid #1B0B00;
 }
 
 #clock,
@@ -19,54 +21,42 @@
 #network,
 #pulseaudio,
 #bluetooth {
-  background-color: #0e0600;
-  padding: 8px 16px 8px 16px;
-  border-radius: 48px;
+  margin: 12px 6px 12px 6px;
+  border-radius: 99px;
 }
 
 #battery {
   color: #b1e380;
-  border: 2px solid #b1e380;
 }
 #battery.ok {
   color: #ffe072;
-  border: 2px solid #ffe072;
 }
 #battery.warning, #bluetooth {
   color: #ffb26c;
-  border: 2px solid #ffb26c;
 }
 #battery.critical,
-#language,
-#custom-waymedia-buttons {
+#language{
   color: #ff8c7c;
-  border: 2px solid #ff8c7c;
 }
 #cpu {
   color: #a5ceff;
-  border: 2px solid #a5ceff;
 }
 #network {
   color: #ffe072;
-  border: 2px solid #ffe072;
 }
 #pulseaudio {
   color: #ffaaf5;
-  border: 2px solid #ffaaf5;
+}
+
+#clock{
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 #custom-waymedia{
-  border: 2px solid #a5ceff;
+ color: #ffe072;
 }
 
-#custom-waymedia-buttons{
-  border: 2px solid #ff8c7c;
-}
-
-#tray {
-  border: 2px solid #FFB26C;
-}
-
-#clock {
-  border: 2px solid #ffeee2;
+#tray{
+  margin-right: 8px;
 }

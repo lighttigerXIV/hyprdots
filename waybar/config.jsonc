@@ -1,11 +1,20 @@
 {
-  "margin-top": 4,
-  "margin-left": 14,
-  "margin-right": 14,
+  "height": 20,
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
   "spacing": 2,
-  "modules-left": ["clock", "custom/waymedia", "custom/waymedia-buttons"],
+  "modules-left": ["clock", "custom/waymedia"],
   "modules-center": [],
-  "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "battery", "hyprland/language", "tray"],
+  "modules-right": [
+    "pulseaudio",
+    "bluetooth",
+    "network",
+    "cpu",
+    "battery",
+    "hyprland/language",
+    "tray"
+  ],
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": true,
@@ -15,20 +24,9 @@
     "format": "{icon}{}",
     "exec": "~/.config/waybar/scripts/waymedia/waymedia",
     "interval": 1,
-    "play-icon": "",
-    "pause-icon": ""
-  },
-  "custom/waymedia-buttons": {
-    "format": "{icon}{}",
-    "exec": "~/.config/waybar/scripts/waymedia/waymedia-buttons",
-    "interval": 1,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
-    "previous-icon": " 󰒮 ",
-    "skip-icon": " 󰒭 ",
-    "play-icon": "  ",
-    "pause-icon": "  "
+    "on-scroll-down": "playerctl previous"
   },
   "pulseaudio": {
     "format": "    {volume}",
@@ -36,7 +34,7 @@
     "scroll-step": 5,
     "on-click": "pavucontrol"
   },
-  "bluetooth":{
+  "bluetooth": {
     "format": " 󰂯 ",
     "format-disabled": " 󰂲 ",
     "on-click": "blueman-manager"
