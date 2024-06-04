@@ -8,8 +8,6 @@
   "modules-center": [],
   "modules-right": [
     "pulseaudio",
-    "bluetooth",
-    "network",
     "cpu",
     "battery",
     "hyprland/language",
@@ -33,17 +31,6 @@
     "format-muted": " ",
     "scroll-step": 5,
     "on-click": "pavucontrol"
-  },
-  "bluetooth": {
-    "format": " 󰂯 ",
-    "format-disabled": " 󰂲 ",
-    "on-click": "blueman-manager"
-  },
-  "network": {
-    "interval": 30,
-    "format-ethernet": " 󰈀 ",
-    "format-wifi": "󰤨   {essid}",
-    "format-disconnected": "󰤯   NOOOO!"
   },
   "cpu": {
     "format": "   {usage}%"
