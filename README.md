@@ -20,3 +20,8 @@ cd ~/.config/hypr
 mv waybar ~/.config/
 mv mako ~/.config/
 ```
+
+## Post Scripts
+```
+systemctl --user enable --now hypridle.service
+```
