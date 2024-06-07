@@ -38,7 +38,7 @@
 #language{
   color: #ff8c7c;
 }
-#cpu {
+#cpu{
   color: #a5ceff;
 }
 #network {
@@ -49,10 +49,9 @@
 }
 
 #clock{
-  margin-top: 15px;
+  margin-top: 16px;
   margin-left: 8px;
 }
-
 #custom-waymedia{
  color: #ffe072;
 }

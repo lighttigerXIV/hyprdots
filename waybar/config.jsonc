@@ -4,7 +4,7 @@
   "margin-left": 8,
   "margin-right": 8,
   "spacing": 2,
-  "modules-left": ["clock", "custom/waymedia"],
+  "modules-left": ["clock" , "custom/waymedia"],
   "modules-center": [],
   "modules-right": [
     "pulseaudio",
@@ -19,9 +19,10 @@
     "tooltip-format": "{:%d/%m/%Y}"
   },
   "custom/waymedia": {
-    "format": "{icon}{}",
+    "format": "{icon} {artist} - {title}",
     "exec": "~/.config/waybar/scripts/waymedia/waymedia",
     "interval": 1,
+    "limit": 60,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous"
@@ -50,7 +51,7 @@
     "format-pt": "🇵🇹"
   },
   "tray": {
-    "icon-size": 18,
+    "icon-size": 14,
     "spacing": 8
   }
 }
