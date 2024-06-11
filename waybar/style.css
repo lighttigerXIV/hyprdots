@@ -6,14 +6,12 @@
 
 #waybar {
   background: #0e0600;
-  opacity: 0.9;
-  border-radius: 8px;
-  border: 2px solid #1B0B00;
+  opacity: 0.95;
+  border-radius: 12px;
+  border: 1px solid #1B0B00;
 }
 
 #clock,
-#custom-waymedia,
-#custom-waymedia-buttons,
 #battery,
 #tray,
 #cpu,
@@ -49,11 +47,16 @@
 }
 
 #clock{
-  margin-top: 16px;
   margin-left: 8px;
 }
-#custom-waymedia{
- color: #ffe072;
+
+#custom-arch{
+  margin: 4px 0px 4px 4px;
+  font-size: 18px;
+  padding: 4px 14px 4px 10px;
+  background-color: #ffe072;
+  color: #000;
+  border-radius: 10px;
 }
 
 #tray{

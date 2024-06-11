@@ -1,10 +1,10 @@
 {
   "height": 20,
-  "margin-top": 8,
-  "margin-left": 8,
-  "margin-right": 8,
+  "margin-top": 16,
+  "margin-left": 16,
+  "margin-right": 16,
   "spacing": 2,
-  "modules-left": ["clock" , "custom/waymedia"],
+  "modules-left": ["custom/arch","clock"],
   "modules-center": [],
   "modules-right": [
     "pulseaudio",
@@ -13,19 +13,15 @@
     "hyprland/language",
     "tray"
   ],
+  "custom/arch":{
+    "format": "󰣇",
+    "exec": "~/.config/waybar/scripts/arch.py",
+    "on-click": "whiskers-launcher"
+  },
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": true,
     "tooltip-format": "{:%d/%m/%Y}"
-  },
-  "custom/waymedia": {
-    "format": "{icon} {artist} - {title}",
-    "exec": "~/.config/waybar/scripts/waymedia/waymedia",
-    "interval": 1,
-    "limit": 60,
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
   },
   "pulseaudio": {
     "format": "    {volume}",
